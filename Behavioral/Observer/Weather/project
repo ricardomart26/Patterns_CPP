@@ -1,0 +1,35 @@
+Project: Weather Monitoring System
+
+Objective: Create a C++ program that simulates a weather monitoring system using the Observer Pattern. This project models weather data as the subject and various displays as observers, which receive and display real-time weather updates.
+
+Description:
+
+    Subject (Weather Data): Define a WeatherData class that acts as the subject. This class will maintain weather-related data such as temperature, humidity, and pressure. It should include methods to register, remove, and notify observers.
+
+    Observer (Weather Display): Create an Observer interface or abstract class that declares an update method. This method will be implemented by concrete observer classes to display weather data.
+
+    Concrete Observer Classes (Weather Displays): Implement concrete observer classes for different types of weather displays, such as a current conditions display, a statistics display, and a forecast display. Each observer should register with the WeatherData subject and update its display when notified.
+
+    User Interface: Create a simple command-line interface (CLI) or graphical user interface (GUI) that allows users to view weather data from various displays. Users should be able to add and remove displays dynamically.
+
+    Realistic Data Simulation: Simulate realistic weather data updates. For instance, you can generate random values for temperature, humidity, and pressure and periodically update the WeatherData subject with these values.
+
+    Observable Logic: Implement logic in the WeatherData class to notify registered observers when weather data changes. Notify observers with updated temperature, humidity, and pressure values.
+
+    Display Logic: In the observer classes, implement the update method to receive the new weather data and display it. You can format and print the data to the console or update a graphical display, depending on your chosen user interface.
+
+    Testing: Test your weather monitoring system by adding and removing different types of weather displays. Ensure that observers receive and display updates correctly.
+
+Learning Objectives:
+
+    Observer Pattern: Learn how to implement the Observer Pattern in C++ to establish a one-to-many dependency between objects.
+
+    Object-Oriented Design: Practice designing classes and interfaces to model a complex system with dynamic dependencies.
+
+    User Interface Interaction: If you choose to create a GUI, you can also learn about GUI development in C++. Alternatively, you can design a CLI-based interface.
+
+    Realistic Data Simulation: Explore techniques for simulating realistic data updates in a software system.
+
+    Dynamic Registration and Removal: Understand how to dynamically register and remove observers from the subject, providing flexibility and modularity.
+
+By working on this project, you'll gain a solid understanding of the Observer Pattern and its practical applications in software development, especially for building systems that involve dynamic data updates and multiple subscribers.
