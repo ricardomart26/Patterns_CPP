@@ -10,6 +10,11 @@
 //         remove(): Remove a child file or directory (only applicable to directories).
 class FileSystemComponent
 {
+    public:
+
+        virtual void displayInfo() const = 0;
+        virtual void add(FileSystemComponent *component) = 0;
+        virtual void remove(FileSystemComponent *component) = 0;
 
 };
 

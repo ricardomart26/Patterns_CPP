@@ -16,7 +16,12 @@
 //     File Operations:
 //         Users can perform operations like copying, moving, and renaming files and directories.
 
+#include "FileSystemExplorer.hpp"
+
 int main()
 {
+    FileSystemExplorer explorer;
+
+
     return (0);
 }
